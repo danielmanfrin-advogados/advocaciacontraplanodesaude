@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Adicionar URLs absolutas após confirmar o domínio público real. -->
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/</loc></url>
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/servicos/negativa-de-cobertura/</loc></url>
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/servicos/tratamentos-e-medicamentos/</loc></url>
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/servicos/reajuste-ou-cancelamento/</loc></url>
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/sobre/</loc></url>
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/perguntas-frequentes/</loc></url>
+  <url><loc>https://advociaciacontraplanodesaude.vercel.app/politica-de-privacidade/</loc></url>
 </urlset>

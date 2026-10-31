@@ -1,10 +1,10 @@
-SITE_URL="PREENCHER_COM_O_DOMINIO_PUBLICO_REAL"
+SITE_URL="https://advociaciacontraplanodesaude.vercel.app/"
 
 # Site estático — Dr. Daniel Manfrin
 
 Projeto multipágina em português do Brasil, feito com HTML, CSS e JavaScript puros, sem framework e sem dependências npm. O build opcional da Vercel apenas copia os arquivos estáticos para `dist/`. Não há formulário de dados médicos, revenda ou intermediação de contatos. O escopo atende à instrução final do usuário: remover páginas de bairros e informar atendimento para todo o Brasil. O bloco de conteúdo e paleta está em `NICHO.md`.
 
-**Esta versão não foi publicada e não está pronta para publicação.** A inscrição OAB/SP 215.246 foi informada e inserida; confirmar sua exatidão. Ainda faltam o domínio público definitivo e dados formais de privacidade.
+**Esta versão não foi publicada.** O domínio informado foi usado nos metadados SEO, mas a origem respondeu HTTP 404 na verificação; a implantação e a confirmação de respostas públicas ficam pendentes. A inscrição OAB/SP 215.246 foi informada e sua exatidão, além dos dados formais de privacidade, ainda deve ser confirmada.
 
 ## Rotas
 
@@ -22,15 +22,15 @@ Cada rota é um arquivo HTML real e contém conteúdo indexável sem depender de
 
 `style.css` contém o visual responsivo; `config.js` reúne telefone, WhatsApp, mensagens e endpoint; `tracker.js` atualiza links e registra automaticamente os cliques na planilha; `favicon.svg` é o ícone do site; `app.config.ts` contém o logo do projeto WebDev e fica fora da saída Vercel. As cinco imagens fotográficas estão em `img/` e têm menos de 150 KB cada. `package.json` não tem dependências; `build.js` usa Node nativo e exclui documentos internos/configuração de projeto de `dist/`. `apps-script/Code.gs` foi copiado do texto fornecido e também não é publicado em `dist/`.
 
-## Domínio e SEO — concluir antes de publicar
+## Domínio e SEO
 
-A linha `SITE_URL` acima é apenas um campo documental para preencher com o domínio público real, depois de confirmadas a disponibilidade e a configuração do deploy. Não há canonical nem `og:url` nas páginas, e o `sitemap.xml` está sem entradas absolutas intencionalmente; não foi inventado um host Vercel. `robots.txt` não inclui uma linha `Sitemap` até haver domínio definitivo. Depois de defini-lo, adicionar `<link rel="canonical">` e `og:url` corretos em cada página, preencher com URLs absolutas as sete entradas do sitemap e acrescentar `Sitemap: https://DOMÍNIO-REAL/sitemap.xml` ao `robots.txt`. Os metadados de título, descrição e prévias sociais já existem; as imagens Open Graph usam URLs CDN públicas.
+O domínio fornecido pelo usuário está registrado em `SITE_URL`. As sete páginas têm canonical e `og:url` com URLs absolutas; `sitemap.xml` lista as sete rotas, e `robots.txt` aponta para esse sitemap. O domínio retornou HTTP 404 na verificação anterior à edição; após uma implantação autorizada, confirme que as páginas e os dois arquivos de indexação respondem publicamente com sucesso. Os metadados de título, descrição e prévias sociais já existem; as imagens Open Graph usam URLs CDN públicas.
 
-`llms.txt` usa caminhos relativos enquanto o domínio não está definido. Antes do deploy, confirmar que `SITE_URL` coincide exatamente com a origem pública real.
+`llms.txt` mantém links relativos; o domínio absoluto foi aplicado às URLs canônicas, sociais, ao sitemap e ao `robots.txt`.
 
 ## Pendências profissionais e de conteúdo
 
-A inscrição informada, `OAB/SP 215.246`, permanece no rodapé das sete páginas. Por solicitação, todo o texto da faixa superior de identificação foi esvaziado. Na inicial, a descrição do hero e o item “Contato direto” incluem a inscrição profissional. O cabeçalho agora usa a marca solicitada “Advocacia Especializada” e a linha “Ações contra planos de saúde”; o responsável deve confirmar antes da publicação que a descrição é demonstrável e adequada às regras profissionais. A expressão “especialista” não foi usada como título pessoal. Também é necessário confirmar nome, inscrição e telefone `+55 16 99323-4658`, completar identidade formal do controlador, canal de privacidade, retenção, fluxo de direitos dos titulares e fornecedores, e revisar os textos. Consulte `CONFORMIDADE-ETICA.md`; este arquivo não substitui a revisão do advogado nem a validação da Seccional.
+A inscrição informada, `OAB/SP 215.246`, permanece no rodapé das sete páginas. Por solicitação, todo o texto da faixa superior de identificação foi esvaziado. Na inicial, a descrição do hero e o item “Contato direto” incluem a inscrição; a página “Sobre” identifica o profissional como Dr. Daniel Manfrin, advogado inscrito na OAB/SP sob o nº 215.246. O cabeçalho agora usa a marca solicitada “Advocacia Especializada” e a linha “Ações contra planos de saúde”; o responsável deve confirmar antes da publicação que a descrição é demonstrável e adequada às regras profissionais. A expressão “especialista” não foi usada como título pessoal. Também é necessário confirmar nome, inscrição e telefone `+55 16 99323-4658`, completar identidade formal do controlador, canal de privacidade, retenção, fluxo de direitos dos titulares e fornecedores, e revisar os textos. Consulte `CONFORMIDADE-ETICA.md`; este arquivo não substitui a revisão do advogado nem a validação da Seccional.
 
 ## Rastreamento e segurança
 

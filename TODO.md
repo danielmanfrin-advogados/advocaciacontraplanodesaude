@@ -5,6 +5,7 @@
 - [x] Cobrir negativa de cobertura assistencial, tratamentos/terapias/medicamentos e reajuste/cancelamento contratual, com linguagem informativa e contextual.
 - [x] Usar contato direto pelo telefone/WhatsApp +55 16 99323-4658; mensagens pré-preenchidas genéricas orientam a não enviar dados médicos na primeira mensagem.
 - [x] Manter a inscrição informada OAB/SP 215.246 nos rodapés das sete páginas; por solicitação, esvaziar todo o texto da faixa superior de identificação; incluir a inscrição nos textos do hero e do item “Contato direto” da página inicial conforme solicitado.
+- [x] Completar a seção de identificação profissional em “Sobre” com “Dr. Daniel Manfrin — advogado inscrito na OAB/SP sob o nº 215.246”, removendo o texto de preenchimento pendente.
 - [x] Não incluir promessas de preço, resultado, prazo ou garantia, depoimentos, avaliações, endereço, CNPJ ou sociedade. Não usar “especialista” como título pessoal sem comprovação.
 - [x] Não incluir revenda, redistribuição ou intermediação de leads.
 
@@ -17,7 +18,8 @@
 ## 3. SEO e arquivos de indexação — parcialmente concluído
 - [x] Incluir title e description por página, Open Graph/Twitter metadata e image, `lang="pt-BR"`, meta robots, `theme-color`, favicon, um H1 por página e JSON-LD válido.
 - [x] Incluir `sitemap.xml`, `robots.txt`, `llms.txt`, links internos e `manus-routes.json` com sete páginas; usar `WebSite` na inicial, `Service` nas páginas de serviço, `FAQPage` na inicial/FAQ e `BreadcrumbList` nas internas.
-- [ ] Domínio público definitivo não informado: adicionar canonical e `og:url`, preencher as sete URLs absolutas no sitemap e adicionar a linha `Sitemap` em robots somente depois de confirmar a origem pública real.
+- [x] Usar o domínio informado `https://advociaciacontraplanodesaude.vercel.app/` nos canonicals e `og:url` das sete páginas, nas sete URLs absolutas do sitemap e na linha `Sitemap` de `robots.txt`.
+- [ ] Após implantação autorizada, verificar respostas públicas 200 para a home, uma página interna, `sitemap.xml` e `robots.txt`; a origem retornou 404 antes desta edição.
 
 ## 4. Contato, rastreamento e privacidade — revisão pendente
 - [x] Incluir botões de WhatsApp/telefone no cabeçalho, corpo, faixa final e barra fixa móvel.
