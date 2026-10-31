@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Início"
+    },
+    {
+      "path": "/servicos/negativa-de-cobertura/",
+      "title": "Negativa de cobertura assistencial"
+    },
+    {
+      "path": "/servicos/tratamentos-e-medicamentos/",
+      "title": "Tratamentos, terapias e medicamentos"
+    },
+    {
+      "path": "/servicos/reajuste-ou-cancelamento/",
+      "title": "Reajuste ou cancelamento de plano"
+    },
+    {
+      "path": "/sobre/",
+      "title": "Sobre o advogado"
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "title": "Perguntas frequentes"
+    },
+    {
+      "path": "/politica-de-privacidade/",
+      "title": "Política de privacidade"
+    }
+  ]
+}

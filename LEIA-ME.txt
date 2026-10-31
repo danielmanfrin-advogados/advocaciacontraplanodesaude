@@ -1,0 +1,44 @@
+SITE_URL="PREENCHER_COM_O_DOMINIO_PUBLICO_REAL"
+
+# Site estático — Dr. Daniel Manfrin
+
+Projeto HTML/CSS/JS puro, sem framework e sem dependências npm. O build da Vercel só copia arquivos para `dist/`. Existem sete páginas: início, três serviços (negativa de cobertura; tratamentos, terapias e medicamentos; reajuste ou cancelamento), sobre, perguntas frequentes e política de privacidade. O atendimento informado é para todo o Brasil; não há páginas de bairros, revenda de contatos, formulário de dados médicos ou promessa de resultado. Consulte `NICHO.md` para o bloco de nicho e a paleta.
+
+## Pendências: não publicar ainda
+
+Substitua o marcador visível `OAB/[UF] nº [inserir antes da publicação]` pelos dados confirmados (nome profissional, Seccional e número de inscrição). Complete o canal de privacidade, os dados do controlador e as informações de retenção. Confirme o número de telefone e revise o texto jurídico como responsável.
+
+O domínio definitivo ainda não foi informado. A linha `SITE_URL` é apenas um campo documental. Canonicals, `og:url` e entradas absolutas de sitemap foram omitidos para não inventar um domínio; `robots.txt` aguarda a linha Sitemap e `llms.txt` usa caminhos relativos. Depois de configurar o domínio Vercel real, adicione canonical e `og:url` corretos em cada HTML, preencha as sete entradas absolutas de `sitemap.xml` e inclua `Sitemap: https://DOMÍNIO-REAL/sitemap.xml` em `robots.txt`.
+
+## Configuração de contato
+
+Altere WhatsApp e telefone somente em `config.js`, no formato internacional de dígitos, por exemplo `55 + DDD + número`. Os links HTML começam com o número provisório `5516900000000`; `tracker.js` substitui os links pelo número de `config.js` quando a página carrega. As mensagens padrão também estão em `config.js` e os textos por assunto são genéricos, sem pedir documentos ou dados de saúde.
+
+## Apps Script e planilha
+
+`apps-script/Code.gs` é a cópia exata do script fornecido no prompt. As instruções abaixo são para o responsável executar manualmente na planilha, não foram executadas nesta entrega. Se for usar o script: abra a planilha correta, selecione **Extensões > Apps Script**, revise o código, cole o `Code.gs` e execute `setup()` uma vez para criar os cabeçalhos e a aba de resumo. Para atualizar uma implantação existente, use **Implantar > Gerenciar implantações > Editar > Nova versão**; confirme a URL atual antes de salvar.
+
+**Cautela de segurança:** o `doGet` do script aceita parâmetros públicos sem validar origem ou token. Qualquer pessoa com a URL pode enviar cliques falsos e poluir as métricas. Não publique/republique essa entrada como confiável sem proteção apropriada, por exemplo via proxy server-side com controles; um segredo dentro de JavaScript público não protege a chamada. Se o endpoint não for protegido, desative a coleta em `config.js` com `endpoint: ""`. O tracker só envia após o visitante escolher “Permitir” e envia campos genéricos mínimos. O endpoint não foi testado nesta entrega.
+
+Para montar uma tabela dinâmica no Sheets, selecione os dados da aba `Cliques` e use **Inserir > Tabela dinâmica**; coloque `Site` em Linhas e `Botão` em Colunas/Valores, usando contagem. Confira os nomes das colunas e permissões antes de compartilhar relatórios.
+
+## Build e deploy na Vercel
+
+Não há React, Vite ou dependências externas. `package.json` contém somente o script de build e `build.js` usa APIs nativas do Node para copiar os arquivos do site a `dist/`, excluindo documentação interna, `app.config.ts` e `apps-script/Code.gs` da saída pública.
+
+```sh
+npm install --package-lock=false
+npm run build
+```
+
+Na Vercel, selecione Framework Preset **Other**, Build Command `npm run build` e Output Directory `dist`. `vercel.json` já define `cleanUrls: true` e `trailingSlash: true`. Não crie `package-lock.json`.
+
+## Google Search Console e sitemap
+
+Depois de completar OAB, privacidade e domínio: verifique a propriedade do domínio no Search Console (por DNS ou método oferecido pelo Google), confirme que a origem pública e `SITE_URL` coincidem, preencha `sitemap.xml` com as sete URLs absolutas e adicione a linha `Sitemap` ao `robots.txt`. Só então envie `https://DOMÍNIO-REAL/sitemap.xml` na seção **Sitemaps** do Search Console e verifique as páginas. O sitemap desta versão está intencionalmente sem URLs porque o domínio real não foi fornecido.
+
+## Perfil de empresa local
+
+Não crie perfil com endereço fictício. Se o advogado tiver endereço profissional real e decidir manter um perfil público, confirme primeiro as regras de elegibilidade do Google e as orientações éticas da OAB/Seccional. Não exponha endereço residencial sem intenção e autorização para torná-lo público.
+
+As fontes normativas consultadas e os limites editoriais estão em `CONFORMIDADE-ETICA.md`. Consulte `README.md` para a estrutura do site e `TODO.md` para as pendências pré-publicação.
