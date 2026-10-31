@@ -2,6 +2,7 @@
 
 - **Nome profissional informado:** Dr. Daniel Manfrin.
 - **Inscrição informada:** OAB/SP 215.246.
+- **Exibição da inscrição:** permanece no rodapé; o valor da faixa superior foi removido por solicitação, mantendo o rótulo sem valor.
 - **Texto de marca no cabeçalho:** “Advocacia Especializada”.
 - **Linha de apoio no cabeçalho:** “Ações contra planos de saúde”.
 - **Serviço/área:** atuação em demandas relacionadas a planos de saúde.

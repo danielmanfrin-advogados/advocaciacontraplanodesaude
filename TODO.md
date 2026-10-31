@@ -4,7 +4,7 @@
 - [x] Criar sete páginas HTML reais com texto indexável: início, três serviços, sobre, perguntas frequentes e política de privacidade. Não criar páginas nem referências a bairros; informar atendimento para todo o Brasil.
 - [x] Cobrir negativa de cobertura assistencial, tratamentos/terapias/medicamentos e reajuste/cancelamento contratual, com linguagem informativa e contextual.
 - [x] Usar contato direto pelo telefone/WhatsApp +55 16 99323-4658; mensagens pré-preenchidas genéricas orientam a não enviar dados médicos na primeira mensagem.
-- [x] Inserir a inscrição informada OAB/SP 215.246 no cabeçalho e rodapé das páginas.
+- [x] Manter a inscrição informada OAB/SP 215.246 nos rodapés das sete páginas; por solicitação, esvaziar o valor em negrito da faixa superior e deixar o rótulo “Identificação profissional:” sem valor.
 - [x] Não incluir promessas de preço, resultado, prazo ou garantia, depoimentos, avaliações, endereço, CNPJ ou sociedade. Não usar “especialista” como título pessoal sem comprovação.
 - [x] Não incluir revenda, redistribuição ou intermediação de leads.
 
