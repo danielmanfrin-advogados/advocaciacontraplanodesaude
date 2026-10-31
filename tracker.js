@@ -1,14 +1,25 @@
 (function () {
   'use strict';
   var C = window.SITE_CONFIG || {};
-  var consentKey = 'danielmanfr_click_metrics';
+  var sessionKey = 'danielmanfr_click_session';
 
-  function phone(value) { return String(value || '').replace(/\D/g, ''); }
-  function currentConsent() {
-    try { return localStorage.getItem(consentKey); } catch (e) { return null; }
+  function digits(value) { return String(value || '').replace(/\D/g, ''); }
+  function param(name) {
+    try { return new URLSearchParams(window.location.search).get(name) || ''; }
+    catch (e) { return ''; }
+  }
+  function sessionId() {
+    try {
+      var id = sessionStorage.getItem(sessionKey);
+      if (!id) {
+        id = 's-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 12);
+        sessionStorage.setItem(sessionKey, id);
+      }
+      return id;
+    } catch (e) { return ''; }
   }
   function updateContactLinks() {
-    var wa = phone(C.whatsapp), tel = phone(C.telefone);
+    var wa = digits(C.whatsapp), tel = digits(C.telefone);
     document.querySelectorAll('[data-acao="whatsapp"]').forEach(function (el) {
       var msg = el.getAttribute('data-msg') || C.mensagem || '';
       if (wa) el.href = 'https://wa.me/' + wa + '?text=' + encodeURIComponent(msg);
@@ -19,43 +30,38 @@
       if (tel) el.href = 'tel:+' + tel;
     });
   }
-  function broadPage() {
-    var p = location.pathname || '/';
-    if (p === '/') return '/';
-    if (p.indexOf('/servicos/') === 0) return '/servicos/';
-    if (p.indexOf('/sobre/') === 0 || p.indexOf('/perguntas-frequentes/') === 0 || p.indexOf('/politica-de-privacidade/') === 0) return '/institucional/';
-    return '/outras-paginas/';
-  }
-  function record(acao, local) {
-    if (currentConsent() !== 'yes' || !C.endpoint) return;
-    /* Minimização: não transmitir texto da mensagem, assunto específico, URL completa, referrer, UTMs, gclid, idioma, tela ou sessão. */
+  function record(acao, local, detalhe) {
+    if (!C.endpoint) return;
+    var screenSize = window.screen ? window.screen.width + 'x' + window.screen.height : '';
+    var ua = navigator.userAgent || '';
     var d = {
       site: C.site || 'danielmanfr',
       nicho: C.nicho || '',
       acao: acao || '',
       local: local || '',
-      pagina: broadPage()
+      pagina: window.location.pathname || '/',
+      origem: document.referrer || param('utm_source') || 'direto',
+      utm_medium: param('utm_medium'),
+      utm_campaign: param('utm_campaign'),
+      utm_term: param('utm_term'),
+      gclid: param('gclid') ? 'sim' : 'não',
+      dispositivo: /Android|iPhone|iPad|iPod|Windows Phone|Mobile/i.test(ua) ? 'celular' : 'computador',
+      tela: screenSize,
+      idioma: navigator.language || '',
+      sessao: sessionId(),
+      detalhe: detalhe || ''
     };
-    var query = Object.keys(d).map(function (k) { return k + '=' + encodeURIComponent(d[k]); }).join('&');
-    var url = C.endpoint + '?' + query;
-    try {
-      fetch(url, { method: 'GET', mode: 'no-cors', keepalive: true }).catch(function () {
-        try { var image = new Image(); image.src = url; } catch (e) {}
-      });
-    } catch (e) {
-      try { var image = new Image(); image.src = url; } catch (e2) {}
+    var query = Object.keys(d).map(function (key) {
+      return encodeURIComponent(key) + '=' + encodeURIComponent(d[key]);
+    }).join('&');
+    var url = C.endpoint + (C.endpoint.indexOf('?') === -1 ? '?' : '&') + query;
+    function fallback() {
+      try { var image = new Image(); image.src = url; } catch (e) {}
     }
-  }
-  function consentUI() {
-    var banner = document.getElementById('consent-banner');
-    if (!banner) return;
-    if (currentConsent() === null) banner.hidden = false;
-    banner.querySelectorAll('[data-consent]').forEach(function (button) {
-      button.addEventListener('click', function () {
-        try { localStorage.setItem(consentKey, button.getAttribute('data-consent')); } catch (e) {}
-        banner.hidden = true;
-      });
-    });
+    try {
+      var request = window.fetch(url, { method: 'GET', mode: 'no-cors', keepalive: true });
+      if (request && typeof request.catch === 'function') request.catch(fallback);
+    } catch (e) { fallback(); }
   }
   function menuUI() {
     var toggle = document.querySelector('.menu-toggle');
@@ -85,10 +91,10 @@
   }
   document.addEventListener('click', function (event) {
     var el = event.target.closest ? event.target.closest('[data-acao]') : null;
-    if (el) record(el.getAttribute('data-acao'), el.getAttribute('data-local'));
+    if (el) record(el.getAttribute('data-acao'), el.getAttribute('data-local'), el.getAttribute('data-msg') || '');
   }, true);
+  window.registrarClique = record;
   updateContactLinks();
-  consentUI();
   menuUI();
   quickUI();
 })();

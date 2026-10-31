@@ -6,7 +6,7 @@ Projeto HTML/CSS/JS puro, sem framework e sem dependências npm. O build da Verc
 
 ## Pendências: não publicar ainda
 
-Substitua o marcador visível `OAB/[UF] nº [inserir antes da publicação]` pelos dados confirmados (nome profissional, Seccional e número de inscrição). Complete o canal de privacidade, os dados do controlador e as informações de retenção. Confirme o número de telefone e revise o texto jurídico como responsável.
+O número informado `OAB/SP 215.246` foi inserido no cabeçalho e no rodapé. Antes da publicação, confirme sua exatidão e o nome profissional, complete a identidade formal do controlador, o canal de privacidade e a retenção, confirme o telefone e revise o texto jurídico.
 
 O domínio definitivo ainda não foi informado. A linha `SITE_URL` é apenas um campo documental. Canonicals, `og:url` e entradas absolutas de sitemap foram omitidos para não inventar um domínio; `robots.txt` aguarda a linha Sitemap e `llms.txt` usa caminhos relativos. Depois de configurar o domínio Vercel real, adicione canonical e `og:url` corretos em cada HTML, preencha as sete entradas absolutas de `sitemap.xml` e inclua `Sitemap: https://DOMÍNIO-REAL/sitemap.xml` em `robots.txt`.
 
@@ -18,7 +18,7 @@ Altere WhatsApp e telefone somente em `config.js`, no formato internacional de d
 
 `apps-script/Code.gs` é a cópia exata do script fornecido no prompt. As instruções abaixo são para o responsável executar manualmente na planilha, não foram executadas nesta entrega. Se for usar o script: abra a planilha correta, selecione **Extensões > Apps Script**, revise o código, cole o `Code.gs` e execute `setup()` uma vez para criar os cabeçalhos e a aba de resumo. Para atualizar uma implantação existente, use **Implantar > Gerenciar implantações > Editar > Nova versão**; confirme a URL atual antes de salvar.
 
-**Cautela de segurança:** o `doGet` do script aceita parâmetros públicos sem validar origem ou token. Qualquer pessoa com a URL pode enviar cliques falsos e poluir as métricas. Não publique/republique essa entrada como confiável sem proteção apropriada, por exemplo via proxy server-side com controles; um segredo dentro de JavaScript público não protege a chamada. Se o endpoint não for protegido, desative a coleta em `config.js` com `endpoint: ""`. O tracker só envia após o visitante escolher “Permitir” e envia campos genéricos mínimos. O endpoint não foi testado nesta entrega.
+**Cautela de segurança e privacidade:** conforme solicitado, não há banner de consentimento e o tracker registra automaticamente cliques em WhatsApp/telefone. Envia tipo/posição do botão, caminho da página, origem/referrer, meio/campanha/termo UTM, presença de gclid, tipo de dispositivo, resolução, idioma, sessão aleatória e mensagem genérica pré-preenchida; não envia nome, e-mail, CPF ou documentos médicos. O `doGet` aceita parâmetros públicos sem validar origem ou token, então qualquer pessoa com a URL pode enviar cliques falsos. Antes da publicação, confirme a base legal, retenção, acesso à planilha e proteção server-side; um segredo no JavaScript público não protege a chamada. Nenhum evento de teste foi enviado.
 
 Para montar uma tabela dinâmica no Sheets, selecione os dados da aba `Cliques` e use **Inserir > Tabela dinâmica**; coloque `Site` em Linhas e `Botão` em Colunas/Valores, usando contagem. Confira os nomes das colunas e permissões antes de compartilhar relatórios.
 
@@ -35,7 +35,7 @@ Na Vercel, selecione Framework Preset **Other**, Build Command `npm run build` e
 
 ## Google Search Console e sitemap
 
-Depois de completar OAB, privacidade e domínio: verifique a propriedade do domínio no Search Console (por DNS ou método oferecido pelo Google), confirme que a origem pública e `SITE_URL` coincidem, preencha `sitemap.xml` com as sete URLs absolutas e adicione a linha `Sitemap` ao `robots.txt`. Só então envie `https://DOMÍNIO-REAL/sitemap.xml` na seção **Sitemaps** do Search Console e verifique as páginas. O sitemap desta versão está intencionalmente sem URLs porque o domínio real não foi fornecido.
+Depois de confirmar OAB/SP 215.246 e completar privacidade e domínio: verifique a propriedade do domínio no Search Console (por DNS ou método oferecido pelo Google), confirme que a origem pública e `SITE_URL` coincidem, preencha `sitemap.xml` com as sete URLs absolutas e adicione a linha `Sitemap` ao `robots.txt`. Só então envie `https://DOMÍNIO-REAL/sitemap.xml` na seção **Sitemaps** do Search Console e verifique as páginas. O sitemap desta versão está intencionalmente sem URLs porque o domínio real não foi fornecido.
 
 ## Perfil de empresa local
 

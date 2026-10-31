@@ -1,6 +1,7 @@
 # BLOCO NICHO
 
 - **Nome profissional informado:** Dr. Daniel Manfrin.
+- **Inscrição informada:** OAB/SP 215.246.
 - **Serviço/área:** atuação em demandas relacionadas a planos de saúde.
 - **Slug de projeto proposto:** `danielmanfr` (não presume domínio Vercel disponível).
 - **Título SEO:** `Ações contra plano de saúde | Daniel Manfrin` (44 caracteres).
