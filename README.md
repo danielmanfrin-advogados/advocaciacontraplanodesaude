@@ -30,7 +30,7 @@ A linha `SITE_URL` acima é apenas um campo documental para preencher com o dom�
 
 ## Pendências profissionais e de conteúdo
 
-A inscrição informada, `OAB/SP 215.246`, foi inserida no cabeçalho e no rodapé de todas as páginas. Antes da publicação, o responsável deve confirmar que nome, inscrição e telefone `+55 16 99323-4658` estão corretos, completar identidade formal do controlador, canal de privacidade, retenção, fluxo de direitos dos titulares e fornecedores, e revisar os textos. A expressão “especialista” não foi usada; só deve ser acrescentada se houver qualificação demonstrável. Consulte `CONFORMIDADE-ETICA.md`; este arquivo não substitui a revisão do advogado nem a validação da Seccional.
+A inscrição informada, `OAB/SP 215.246`, foi inserida no cabeçalho e no rodapé de todas as páginas. O cabeçalho agora usa a marca solicitada “Advocacia Especializada” e a linha “Ações contra planos de saúde”; o responsável deve confirmar antes da publicação que a descrição é demonstrável e adequada às regras profissionais. A expressão “especialista” não foi usada como título pessoal. Também é necessário confirmar nome, inscrição e telefone `+55 16 99323-4658`, completar identidade formal do controlador, canal de privacidade, retenção, fluxo de direitos dos titulares e fornecedores, e revisar os textos. Consulte `CONFORMIDADE-ETICA.md`; este arquivo não substitui a revisão do advogado nem a validação da Seccional.
 
 ## Rastreamento e segurança
 

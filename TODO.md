@@ -5,13 +5,14 @@
 - [x] Cobrir negativa de cobertura assistencial, tratamentos/terapias/medicamentos e reajuste/cancelamento contratual, com linguagem informativa e contextual.
 - [x] Usar contato direto pelo telefone/WhatsApp +55 16 99323-4658; mensagens pré-preenchidas genéricas orientam a não enviar dados médicos na primeira mensagem.
 - [x] Inserir a inscrição informada OAB/SP 215.246 no cabeçalho e rodapé das páginas.
-- [x] Não incluir promessas de preço, resultado, prazo ou garantia, depoimentos, avaliações, endereço, CNPJ, sociedade ou dado profissional inventado. Não afirmar título de especialista sem comprovação.
+- [x] Não incluir promessas de preço, resultado, prazo ou garantia, depoimentos, avaliações, endereço, CNPJ ou sociedade. Não usar “especialista” como título pessoal sem comprovação.
 - [x] Não incluir revenda, redistribuição ou intermediação de leads.
 
 ## 2. Design e navegação — concluído
 - [x] Implementar experiência mobile-first, navegação móvel, fotografia original no hero, botões arredondados, cards e paleta azul sóbria.
 - [x] Incluir contraste, foco visível, alvos de toque adequados e suporte a `prefers-reduced-motion`.
 - [x] Fornecer `style.css`, `config.js`, `tracker.js` e `favicon.svg`.
+- [x] Aplicar no cabeçalho das sete páginas o texto solicitado: “Advocacia Especializada” e “Ações contra planos de saúde”, preservando os demais elementos repetidos.
 
 ## 3. SEO e arquivos de indexação — parcialmente concluído
 - [x] Incluir title e description por página, Open Graph/Twitter metadata e image, `lang="pt-BR"`, meta robots, `theme-color`, favicon, um H1 por página e JSON-LD válido.
@@ -21,7 +22,7 @@
 ## 4. Contato, rastreamento e privacidade — revisão pendente
 - [x] Incluir botões de WhatsApp/telefone no cabeçalho, corpo, faixa final e barra fixa móvel.
 - [x] Remover o banner de mensagens/métricas opcionais.
-- [x] Registrar automaticamente na planilha os cliques em WhatsApp/telefone, sem texto digitado pelo visitante; enviar ação, posição, página, origem/referrer, UTM (meio/campanha/termo), presença de gclid, tipo de dispositivo, resolução, idioma, sessão aleatória e mensagem genérica pré-preenchida.
+- [x] Registrar automaticamente na planilha os cliques em WhatsApp/telefone, enviando ação, posição, página, origem/referrer, UTM (meio/campanha/termo), presença de gclid, tipo de dispositivo, resolução, idioma, sessão aleatória e mensagem genérica pré-preenchida.
 - [x] Atualizar a política de privacidade para descrever o rastreamento e o Apps Script; não solicitar documentos médicos/dados de saúde em formulário; não há formulário de contato.
 - [x] Manter `apps-script/Code.gs` como cópia do material fornecido. Nenhum evento de teste foi enviado à planilha.
 - [ ] Confirmar identidade formal do controlador, canal dedicado para privacidade, base legal, retenção, titulares/acesso à planilha e política de terceiros.
@@ -37,6 +38,7 @@
 
 ## 6. Revisão obrigatória antes de publicação — pendente
 - [ ] Confirmar que nome profissional e OAB/SP 215.246 correspondem aos dados do advogado responsável.
+- [ ] Revisar se “Advocacia Especializada” é uma descrição demonstrável e adequada às regras de publicidade da OAB; se não for, substituir por uma formulação neutra.
 - [ ] Confirmar telefone, domínio, identidade formal do controlador, política/retenção, proteção do endpoint e base legal do rastreamento contínuo.
 - [ ] Completar canonicals, `og:url`, sitemap e linha Sitemap em robots após definir o domínio público real.
 - [ ] Só publicar depois de completar e revisar as pendências anteriores.
