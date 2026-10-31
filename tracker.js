@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var C = window.SITE_CONFIG || {};
-  var sessionKey = 'danielmanfr_click_session';
+  var sessionKey = 'advociaciacontraplanodesaude_click_session';
 
   function digits(value) { return String(value || '').replace(/\D/g, ''); }
   function param(name) {
@@ -35,7 +35,7 @@
     var screenSize = window.screen ? window.screen.width + 'x' + window.screen.height : '';
     var ua = navigator.userAgent || '';
     var d = {
-      site: C.site || 'danielmanfr',
+      site: C.site || 'advociaciacontraplanodesaude',
       nicho: C.nicho || '',
       acao: acao || '',
       local: local || '',

@@ -25,6 +25,7 @@
 - [x] Incluir botões de WhatsApp/telefone no cabeçalho, corpo, faixa final e barra fixa móvel.
 - [x] Remover o banner de mensagens/métricas opcionais.
 - [x] Registrar automaticamente na planilha os cliques em WhatsApp/telefone, enviando ação, posição, página, origem/referrer, UTM (meio/campanha/termo), presença de gclid, tipo de dispositivo, resolução, idioma, sessão aleatória e mensagem genérica pré-preenchida.
+- [x] Gravar o identificador do site como `advociaciacontraplanodesaude` no campo `site` da planilha e usar “Advocacia especializada contra planos de saúde” como title/H1 principal da inicial.
 - [x] Atualizar a política de privacidade para descrever o rastreamento e o Apps Script; não solicitar documentos médicos/dados de saúde em formulário; não há formulário de contato.
 - [x] Manter `apps-script/Code.gs` como cópia do material fornecido. Nenhum evento de teste foi enviado à planilha.
 - [ ] Confirmar identidade formal do controlador, canal dedicado para privacidade, base legal, retenção, titulares/acesso à planilha e política de terceiros.

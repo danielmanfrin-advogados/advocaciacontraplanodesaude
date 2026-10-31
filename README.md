@@ -20,11 +20,11 @@ Cada rota é um arquivo HTML real e contém conteúdo indexável sem depender de
 
 ## Arquivos e tecnologia
 
-`style.css` contém o visual responsivo; `config.js` reúne telefone, WhatsApp, mensagens e endpoint; `tracker.js` atualiza links e registra automaticamente os cliques na planilha; `favicon.svg` é o ícone do site; `app.config.ts` contém o logo do projeto WebDev e fica fora da saída Vercel. As cinco imagens fotográficas estão em `img/` e têm menos de 150 KB cada. `package.json` não tem dependências; `build.js` usa Node nativo e exclui documentos internos/configuração de projeto de `dist/`. `apps-script/Code.gs` foi copiado do texto fornecido e também não é publicado em `dist/`.
+`style.css` contém o visual responsivo; `config.js` reúne o identificador da planilha (`advociaciacontraplanodesaude`), telefone, WhatsApp, mensagens e endpoint; `tracker.js` atualiza links e registra automaticamente os cliques na planilha; `favicon.svg` é o ícone do site; `app.config.ts` contém o logo do projeto WebDev e fica fora da saída Vercel. As cinco imagens fotográficas estão em `img/` e têm menos de 150 KB cada. `package.json` não tem dependências; `build.js` usa Node nativo e exclui documentos internos/configuração de projeto de `dist/`. `apps-script/Code.gs` foi copiado do texto fornecido e também não é publicado em `dist/`.
 
 ## Domínio e SEO
 
-O domínio fornecido pelo usuário está registrado em `SITE_URL`. As sete páginas têm canonical e `og:url` com URLs absolutas; `sitemap.xml` lista as sete rotas, e `robots.txt` aponta para esse sitemap. O domínio retornou HTTP 404 na verificação anterior à edição; após uma implantação autorizada, confirme que as páginas e os dois arquivos de indexação respondem publicamente com sucesso. Os metadados de título, descrição e prévias sociais já existem; as imagens Open Graph usam URLs CDN públicas.
+O domínio fornecido pelo usuário está registrado em `SITE_URL`. O título e H1 da inicial são “Advocacia especializada contra planos de saúde”. As sete páginas têm canonical e `og:url` com URLs absolutas; `sitemap.xml` lista as sete rotas, e `robots.txt` aponta para esse sitemap. O domínio retornou HTTP 404 na verificação anterior à edição; após uma implantação autorizada, confirme que as páginas e os dois arquivos de indexação respondem publicamente com sucesso. Os metadados de título, descrição e prévias sociais já existem; as imagens Open Graph usam URLs CDN públicas.
 
 `llms.txt` mantém links relativos; o domínio absoluto foi aplicado às URLs canônicas, sociais, ao sitemap e ao `robots.txt`.
 
