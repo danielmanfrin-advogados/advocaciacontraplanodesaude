@@ -20,7 +20,7 @@ Cada rota é um arquivo HTML real e contém conteúdo indexável sem depender de
 
 ## Arquivos e tecnologia
 
-`style.css` contém o visual responsivo; `config.js` reúne o identificador da planilha (`advociaciacontraplanodesaude`), telefone, WhatsApp, mensagens e endpoint; `tracker.js` atualiza links e registra automaticamente os cliques na planilha; `favicon.svg` é o ícone do site; `app.config.ts` contém o logo do projeto WebDev e fica fora da saída Vercel. As cinco imagens fotográficas estão em `img/` e têm menos de 150 KB cada. `package.json` não tem dependências; `build.js` usa Node nativo e exclui documentos internos/configuração de projeto de `dist/`. `apps-script/Code.gs` foi copiado do texto fornecido e também não é publicado em `dist/`.
+`style.css` contém o visual responsivo; `config.js` reúne o identificador da planilha (`advociaciacontraplanodesaude`), telefone, WhatsApp, mensagens e endpoint; `tracker.js` atualiza links e registra automaticamente os cliques na planilha; `favicon.svg` é o ícone do site; `app.config.ts` contém o logo do projeto WebDev e fica fora da saída Vercel. As seis imagens fotográficas estão em `img/` e têm menos de 150 KB cada; cinco são imagens originais e uma é o retrato do advogado obtido na página oficial indicada pelo usuário. A origem do retrato está documentada em `ASSET_SOURCES.md`. `package.json` não tem dependências; `build.js` usa Node nativo e exclui documentos internos/configuração de projeto de `dist/`. `apps-script/Code.gs` foi copiado do texto fornecido e também não é publicado em `dist/`.
 
 ## Domínio e SEO
 

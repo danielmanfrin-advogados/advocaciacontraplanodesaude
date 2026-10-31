@@ -4,6 +4,7 @@
 - [x] Criar sete páginas HTML reais com texto indexável: início, três serviços, sobre, perguntas frequentes e política de privacidade. Não criar páginas nem referências a bairros; informar atendimento para todo o Brasil.
 - [x] Cobrir negativa de cobertura assistencial, tratamentos/terapias/medicamentos e reajuste/cancelamento contratual, com linguagem informativa e contextual.
 - [x] Usar contato direto pelo telefone/WhatsApp +55 16 99323-4658; mensagens pré-preenchidas genéricas orientam a não enviar dados médicos na primeira mensagem.
+- [x] Na página Sobre, substituir a foto genérica pelo retrato de Dr. Daniel Manfrin da página oficial indicada pelo usuário, mantendo o restante do layout.
 - [x] Manter a inscrição informada OAB/SP 215.246 nos rodapés das sete páginas; por solicitação, esvaziar todo o texto da faixa superior de identificação; incluir a inscrição nos textos do hero e do item “Contato direto” da página inicial conforme solicitado.
 - [x] Completar a seção de identificação profissional em “Sobre” com “Dr. Daniel Manfrin — advogado inscrito na OAB/SP sob o nº 215.246”, removendo o texto de preenchimento pendente.
 - [x] Não incluir promessas de preço, resultado, prazo ou garantia, depoimentos, avaliações, endereço, CNPJ ou sociedade. Não usar “especialista” como título pessoal sem comprovação.
