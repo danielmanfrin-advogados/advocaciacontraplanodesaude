@@ -19,14 +19,14 @@
 ## 3. SEO e arquivos de indexação — parcialmente concluído
 - [x] Incluir title e description por página, Open Graph/Twitter metadata e image, `lang="pt-BR"`, meta robots, `theme-color`, favicon, um H1 por página e JSON-LD válido.
 - [x] Incluir `sitemap.xml`, `robots.txt`, `llms.txt`, links internos e `manus-routes.json` com sete páginas; usar `WebSite` na inicial, `Service` nas páginas de serviço, `FAQPage` na inicial/FAQ e `BreadcrumbList` nas internas.
-- [x] Usar o domínio informado `https://advociaciacontraplanodesaude.vercel.app/` nos canonicals e `og:url` das sete páginas, nas sete URLs absolutas do sitemap e na linha `Sitemap` de `robots.txt`.
+- [x] Usar o domínio informado `https://advocaciacontraplanodesaude.vercel.app/` nos canonicals e `og:url` das sete páginas, nas sete URLs absolutas do sitemap e na linha `Sitemap` de `robots.txt`.
 - [ ] Após implantação autorizada, verificar respostas públicas 200 para a home, uma página interna, `sitemap.xml` e `robots.txt`; a origem retornou 404 antes desta edição.
 
 ## 4. Contato, rastreamento e privacidade — revisão pendente
 - [x] Incluir botões de WhatsApp/telefone no cabeçalho, corpo, faixa final e barra fixa móvel.
 - [x] Remover o banner de mensagens/métricas opcionais.
 - [x] Registrar automaticamente na planilha os cliques em WhatsApp/telefone, enviando ação, posição, página, origem/referrer, UTM (meio/campanha/termo), presença de gclid, tipo de dispositivo, resolução, idioma, sessão aleatória e mensagem genérica pré-preenchida.
-- [x] Gravar o identificador do site como `advociaciacontraplanodesaude` no campo `site` da planilha e usar “Advocacia especializada contra planos de saúde” como title/H1 principal da inicial.
+- [x] Gravar o identificador do site como `advocaciacontraplanodesaude` no campo `site` da planilha e usar “Advocacia especializada contra planos de saúde” como title/H1 principal da inicial.
 - [x] Atualizar a política de privacidade para descrever o rastreamento e o Apps Script; não solicitar documentos médicos/dados de saúde em formulário; não há formulário de contato.
 - [x] Manter `apps-script/Code.gs` como cópia do material fornecido. Nenhum evento de teste foi enviado à planilha.
 - [ ] Confirmar identidade formal do controlador, canal dedicado para privacidade, base legal, retenção, titulares/acesso à planilha e política de terceiros.

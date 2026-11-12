@@ -5,7 +5,7 @@
 - **Texto de marca no cabeçalho:** “Advocacia Especializada”.
 - **Linha de apoio no cabeçalho:** “Ações contra planos de saúde”.
 - **Serviço/área:** atuação em demandas relacionadas a planos de saúde.
-- **Identificador do site na planilha e slug:** `advociaciacontraplanodesaude`.
+- **Identificador do site na planilha e slug:** `advocaciacontraplanodesaude`.
 - **Título SEO e H1 da inicial:** `Advocacia especializada contra planos de saúde` (46 caracteres).
 
 - **Meta description:** `Informações sobre ações relacionadas a planos de saúde e contato direto com o advogado Dr. Daniel Manfrin. Atendimento informado para todo o Brasil.` (148 caracteres).
@@ -14,4 +14,4 @@
 - **CTA:** WhatsApp/telefone `+55 16 99323-4658`, com mensagens iniciais genéricas.
 - **Cores:** principal `#1D4E89`; escura `#153863`; tint `#EDF1F5`; tint2 `#D2DCE7`. Contraste de texto branco: `8,39:1` sobre a principal e `11,81:1` sobre a escura.
 - **Direção visual:** editorial profissional, sóbria e acolhedora; fotografias originais sem retratar o advogado; cantos arredondados, foco visível e navegação mobile-first.
-- **Domínio público informado:** `https://advociaciacontraplanodesaude.vercel.app/`; o domínio respondeu HTTP 404 na verificação anterior à publicação.
+- **Domínio público informado:** `https://advocaciacontraplanodesaude.vercel.app/`; o domínio respondeu HTTP 404 na verificação anterior à publicação.
